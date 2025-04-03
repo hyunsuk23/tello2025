@@ -1,0 +1,55 @@
+
+@mixin centerPo($x, $y, $z, $trX, $trY){
+    position: absolute;
+    left: $x;
+    top: $y;
+    z-index: $z;
+
+    @if $x == 50% and $y == 50% {
+        transform: translate(-50%,-50%);
+    } @else if $x == 50% {
+        transform: translateX(-50%);
+    } @else if $y == 50% {
+        transform: translateY(-50%);
+    }
+
+    transform: translate($trX, $trY);
+}
+
+
+@mixin btn1($btC){
+    margin-top: 4.4rem; 
+    font-size: 3rem; 
+    padding: 1rem 0; 
+    width: 25rem; 
+    background: $btC; 
+    border-radius: 1.5rem; 
+    color: $fontColor3; 
+    display: block; 
+    text-align: center;
+}
+
+
+
+
+@mixin loading() {
+    
+    .loading_wrap {position: fixed; width: 100%; height: 100vh; background: rgba(0,0,0,0.5);z-index: 5; left: 0; top: 0; backdrop-filter: blur(5px); display: none;
+        .loading_pop {width: 230px; height: 135px; background:#f5f5f5;       
+            position: fixed; left: 50%;top: 50%;z-index: 10;transform: translate(-50%, -50%); display: flex; flex-direction: column; align-items: center; justify-content: center;
+            .icon {margin-bottom: 2rem;}
+            @content;
+
+            .btn_close {position: absolute; right: 10px; top: 10px; width: 26px; height: 26px; cursor: pointer; display: none;
+                &:before, &:after {content: ""; position: absolute; width: 100%; height: 2px; background: #000; left: 50%; top: 50%; transform: translate(-50%,-50%);}
+                &:before {transform:translate(-50%,-50%) rotate(45deg);}
+                &:after {transform:translate(-50%,-50%) rotate(-45deg);}
+            }
+
+            .text_box {text-align: center;
+                h4 {font-size: 14px; margin-bottom: 10px;}
+                p {font-size: 12px; color: #333;}
+            }
+        }
+    }
+}

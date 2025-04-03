@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TELLO유아교육홈페이 새글</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="shortcut icon" href="images/logo.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <script src="script/jquery-3.7.1.js"></script>
+    <script src="script/action.js"></script>
+</head>
+<body>
+    <!-- <? include 'include/header.html' ?> -->
+
+    <div id="visual_sub">
+        <div class="centerbox"> 
+        </div>
+    </div>
+
+    <section id="section_sub" class="news">
+        <div class="centerbox">
+            <h3>TELLO 소식</h3>
+            <div class="content">
+
+                <div class="board_write">
+                    <form>
+                        <div class="board_content">
+                            <ul>
+                                <li>
+                                    <label>구분</label>
+                                    <div class="input_box">
+                                        <label for="divi1">
+                                            <input type="radio" name="divi" id="divi1"> 공지사항
+                                        </label>
+                                        <label for="divi2">
+                                            <input type="radio" name="divi" id="divi2"> 업데이트
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <label>제목</label>
+                                    <div class="input_box">
+                                        <input type="text" required>
+                                    </div>
+                                </li>
+                                <li>
+                                    <label>작성자</label>
+                                    <div class="input_box">
+                                        <input type="text" required class="short">
+                                    </div>
+                                </li>
+                                <li class="cont">
+                                    <label>내용</label>
+                                    <div class="input_box">
+                                        <textarea name="" id=""></textarea>
+                                    </div>
+                                </li>
+                                <li>
+                                    <label>파일첨부</label>
+                                    <div class="input_box">
+                                        <label for="file1" class="file_select">
+                                            <input type="file" id="file1" accept="image/*">
+                                            <span class="file_name"></span>
+                                            <span class="file_btn">파일선택</span>
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+    
+    
+                        <div class="btn_board">
+                            <button type ='button' class="btn01 btn_list" data-jaehong="눌러" onclick="history.back()">뒤로</button>
+                            <button type="submit" class="btn01 btn_ok" data-jaehong="눌러">확인</button>
+                            <button type="resset"class= "btn01 btn_cancel" data-jaehong="눌러">다시쓰기</button>
+                        </div>
+                    </form>
+                </div>
+
+
+                
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- <? include 'include/footer.html' ?> -->
+    
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TELLO유아교육홈페이지 지도</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="shortcut icon" href="images/logo.png">
+
+    <script src="script/jquery-3.7.1.js"></script>
+    <script src="script/action.js"></script>
+</head>
+<body>
+    <!-- <? include 'include/header.html' ?> -->
+
+    <div id="visual_sub">
+        <div class="centerbox">
+            <div class="text"></div>
+            <div class="subtit"></div>
+        </div>
+    </div>
+
+    <section id="section_sub" class="direction">
+        <div class="centerbox">
+            <div class="text">
+                <!--
+                    * 카카오맵 - 약도서비스
+                    * 한 페이지 내에 약도를 2개 이상 넣을 경우에는
+                    * 약도의 수 만큼 소스를 새로 생성, 삽입해야 합니다.
+                -->
+                <!-- 1. 약도 노드 -->
+                <div id="daumRoughmapContainer1740470383779" class="root_daum_roughmap root_daum_roughmap_landing" style="width: 100%;"></div>
+
+                <!-- 2. 설치 스크립트 -->
+                <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+                <!-- 3. 실행 스크립트 -->
+                <script charset="UTF-8">
+                    new daum.roughmap.Lander({
+                        "timestamp" : "1740470383779",
+                        "key" : "2n67g",
+                        "mapWidth" : "",
+                        "mapHeight" : "360"
+                    }).render();
+                </script>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- <? include 'include/footer.html' ?> -->
+
+</body>
+</html>

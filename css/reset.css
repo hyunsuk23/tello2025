@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+* {margin: 0; padding: 0;}
+a {color: #222; text-decoration: none;}
+li {list-style: none;}
+table {border-collapse: collapse;}
+legend,caption {font-size: 0; color: transparent; text-indent: -9999px; height: 0; overflow: hidden;}
+html, body {height: 100%;}
+fieldset, button {background: none; border: 0;}
+button {cursor: pointer;}
+img {border: 0; vertical-align: top;}
+input {border-radius: 0; outline: 0; border: 1px solid #999; text-indent: 1rem;}
+input:focus {border: 1px solid #ff9558;}
+textarea {border-radius: 0; outline: 0; border: 1px solid #999; width: 100%; padding: 8px; font-size: inherit; }
+/*inherit 상속받는 것을 의미함*/
